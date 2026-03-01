@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OurCourse | DevConnect</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/our-course.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo-container">
+        <img src="images/logo-1.png" alt="DevConnect Logo" class="logo-img" />
+        <a href="index.html" class="logo">{DevConnect}</a>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="our-course.html" class="active">OurCourse</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn-primary">Join Community</a>
+      <div class="hamburger">☰</div>
+    </div>
+  </header>
+
+  <!-- SEARCH BAR -->
+
+  <section class="search-bar-section">
+    <div class="container search-bar-container">
+      <form class="search-form" action="#" method="GET">
+        <input type="text" name="query" class="course-search" placeholder="Search courses..."
+          aria-label="Search OurCourse" />
+        <button type="submit" class="course-search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <div class="search-right">
+        <div class="dropdown">
+          <button class="dropbtn">Development</button>
+          <div class="dropdown-content">
+            <a href="#">Web Development</a>
+            <a href="#">Mobile Development</a>
+            <a href="#">Database Development</a>
+            <a href="#">Programming Languages</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Design</button>
+          <div class="dropdown-content">
+            <a href="#">Web Design</a>
+            <a href="#">3D Animations</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">AI</button>
+          <div class="dropdown-content">
+            <a href="#">AI Fundamentals</a>
+            <a href="#">AI For Developers</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Personal Development</button>
+          <div class="dropdown-content">
+            <a href="#">Leadership</a>
+            <a href="#">Personal Transformation</a>
+            <a href="#">Career Development</a>
+          </div>
+        </div>
+
+        <!-- Profile Icon -->
+        <div class="dropdown profile-dropdown">
+          <button class="dropbtn">
+            <i class="fas fa-user-circle"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Settings</a>
+            <a href="#">My Learning</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <section class="hero ourcourse-hero">
+    <div class="container hero-content">
+      <span class="badge">OurCourse</span>
+      <h1 id="hero-heading">Learn, Build & Grow with DevConnect</h1>
+      <p id="hero-paragraph" class="hero-paragraph">
+        Structured learning paths designed to help developers master skills and apply them in real projects.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://twitter.com/yourhandle" target="_blank" class="btn-outline follow-x">
+          <i class="fab fa-x-twitter"></i> Follow on X
+        </a>
+        <a href="projects.html" class="btn-outline">Explore Projects</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- COURSE OVERVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Available Tutorials</h2>
+        <p class="section-paragraph">
+          Explore free tutorials across different technologies — learn at your own pace.
+        </p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <img src="images/javascript.jpg" alt="JavaScript Course" class="card-img">
+          <div class="card-content">
+            <h3>JavaScript Crash Course</h3>
+            <p class="card-paragraph">Quickly grasp the fundamentals of JavaScript with hands-on examples.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/python-crash.jpg" alt="Python Course" class="card-img">
+          <div class="card-content">
+            <h3>Python for Beginners</h3>
+            <p class="card-paragraph">Learn Python basics and start building simple applications.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/html.jpg" alt="HTML Course" class="card-img">
+          <div class="card-content">
+            <h3>HTML for Complete Beginners</h3>
+            <p class="card-paragraph">Understand the building blocks of the web with HTML tutorials.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/react.webp" alt="React Course" class="card-img">
+          <div class="card-content">
+            <h3>React Basics & Beyond</h3>
+            <p class="card-paragraph">Dive into React and learn how to build dynamic user interfaces.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/java-course.jpg" alt="Java Course" class="card-img">
+          <div class="card-content">
+            <h3>Java Essentials</h3>
+            <p class="card-paragraph">Get started with Java programming and object-oriented concepts.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/php-course.jpg" alt="PHP Course" class="card-img">
+          <div class="card-content">
+            <h3>PHP Fundamentals</h3>
+            <p class="card-paragraph">Learn PHP basics to create dynamic websites and applications.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/chat-gpt.jpg" alt="Prompting Course" class="card-img">
+          <div class="card-content">
+            <h3>How to Prompt AI</h3>
+            <p class="card-paragraph">Learn how to effectively prompt AI models for better results.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/Ai-dev.webp" alt="AI for Developers Course" class="card-img">
+          <div class="card-content">
+            <h3>AI for Developers</h3>
+            <p class="card-paragraph">Learn how to integrate AI into your development workflow and build intelligent
+              applications.</p>
+          </div>
+          <span class="badge premium">Premium</span>
+          <div class="card-overlay">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- COURSE STRUCTURE -->
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Course Structure</h2>
+        <p class="section-paragraph">Step-by-step modules with weekly challenges and live sessions.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">📅</div>
+          <h3>Weekly Modules</h3>
+          <p class="card-paragraph">Each week introduces new concepts with practical exercises.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🎥</div>
+          <h3>Live Mentorship</h3>
+          <p class="card-paragraph">Interactive sessions with experienced developers to guide you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="section">
+    <div class="container hero-content">
+      <h2>Ready to Start Your Journey?</h2>
+      <p class="hero-paragraph">Join OurCourse today and become part of a community that learns and builds together.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-light">Enroll Now</a>
+        <a href="events.html" class="btn-outline">Upcoming Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>{DevConnect}</h3>
+        <p>Helping developers learn, collaborate, and grow through real projects.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="our-course.html">OurCourse</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="#">Join</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Guidelines</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <p>Email: hello@devconnect.com</p>
+        <p>Twitter: @devconnect</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 DevConnect. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/navToggle.js"></script>
+  <script src="js/textSwap.js"></script>
+  <script src="js/activeLink.js"></script>
+  <script src="js/courseDetails.js"></script>
+</body>
+
+</html>

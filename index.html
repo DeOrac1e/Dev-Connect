@@ -4,115 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevConnect</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header class="header">
   <div class="container nav">
-        <div class="logo-container">
-          <img src="images/logo-1.png" alt="" class="logo-img" />
-          <a href="index.html" class="logo">DevConnect</a>
-        </div>
+    <div class="logo-container">
+      <img src="images/logo-1.png" alt="DevConnect Logo" class="logo-img" />
+      <a href="index.html" class="logo">{DevConnect}</a>
+    </div>
 
     <nav>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="about us.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#">Team</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="our-course.html">OurCourse</a></li>
+        <li><a href="events.html">Events</a></li>
       </ul>
     </nav>
 
     <a href="#" class="btn-primary">Join Community</a>
+    <div class="hamburger">☰</div>
   </div>
 </header>
 
 <!------------------------------------------------- HERO ----------------------------------------------------->
 <section class="hero">
   <div class="container hero-content">
-    <span class="badge">Welcome to DevConnect</span>
-    <h1>Where Developers Connect, Learn & Build Together</h1>
-    <p class="hero-paragraph">
-      Join a  thriving community of developers passionate about  coding, collaboration, and  continuous learning. Share knowledge, work on exciting projects, and grow your career
-        with us. 
+    <span class="badge">Welcome to {DevConnect}</span>
+    <h1 id="hero-heading">Where Developers Connect, Learn & Build Together</h1>
+    <p id="hero-paragraph" class="hero-paragraph">
+      Join a thriving community of developers passionate about coding, collaboration, and continuous learning.
     </p>
-
     <div class="hero-buttons">
       <a href="#" class="btn-light">Join Our Community</a>
-      <a href="#" class="btn-outline">Explore Projects</a>
+      <a href="https://twitter.com/yourhandle" target="_blank" class="btn-outline follow-x">
+        <i class="fab fa-x-twitter"></i> Follow on X
+      </a>
     </div>
   </div>
 </section>
-
 <!--------------------------------------------- WHY JOIN --------------------------------------------------->
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2>Why Join DevConnect?</h2>
-      <p class="sectio-paragraph">We are more than just a community , we are family of developers helping each other succeed</p>
+      <h2>Why Join {DevConnect}?</h2>
+      <p class="section-paragraph">
+        We are more than just a community, we are a family of developers helping each other succeed.
+      </p>
     </div>
 
     <div class="grid-3">
       <div class="card">
+        <div class="card-icon">👥</div>
         <h3>Vibrant Community</h3>
         <p class="card-paragraph">Connect with passionate developers from around the world.</p>
       </div>
 
       <div class="card">
+        <div class="card-icon">📚</div>
         <h3>Learn & Grow</h3>
-        <p class="card-paragraph">Access Tutorials and Challenges.</p>
+        <p class="card-paragraph">Access tutorials and challenges.</p>
       </div>
 
       <div class="card">
-        <h3>Get Recognized </h3>
+        <div class="card-icon">⭐</div>
+        <h3>Get Recognized</h3>
         <p class="card-paragraph">Showcase your skill and become our personality of the week.</p>
       </div>
-      
-      <!-- <div class="card">
-        <h3>Get Recognized </h3>
-        <p class="card-paragraph">Collaborate on real world projects and build your portfolio.</p>
-      </div> -->
-
     </div>
   </div>
 </section>
 
-<!------------------------------------------------ EVENTS -------------------------------------------------------->
 
+<!------------------------------------------------ EVENTS -------------------------------------------------------->
 <section class="section alt-bg">
   <div class="container">
     <div class="section-header">
       <h2>Group Activities</h2>
-      <p class="event-p">Consistent sessions that keep members accountable.</p>
+      <p class="sectio-paragraph">Consistent sessions that keep members accountable.</p>
     </div>
 
     <div class="grid-2">
-      <div class="event-card">
-        <span class="event-badge">Recurring</span>
+      <div class="card">
+        <div class="card-icon">🔄</div>
         <h3>Weekly Code Review</h3>
-        <p class="event-p">CJoin us every Friday for collaborative code reviews and learning..</p>
+        <p class="card-paragraph">Join us every Friday for collaborative code reviews and learning.</p>
         <strong>Every Friday – 6 PM GMT</strong>
       </div>
 
-      <div class="event-card">
-        <span class="event-badge">Monthly</span>
-        <h3>Open Day Contribution</h3>
-        <p class="event-p">Learn how to contribute to open source projects together.</p>
-        <strong>Every Tuesday</strong>
+      <div class="card">
+        <div class="card-icon">🎥</div>
+        <h3>Live Session</h3>
+        <p class="card-paragraph">
+          We usually host DevConnect WhatsApp Live 9PM - soon we’ll be including X for broader reach.
+        </p>
+        <strong>Coming Soon</strong>
       </div>
     </div>
   </div>
 </section>
-
 <!------------------------------------ FOOTER --------------------------------------------->
-
 <footer class="footer">
   <div class="container footer-grid">
-
     <div class="footer-brand">
-      <h3>DevConnect</h3>
+      <h3>{DevConnect}</h3>
       <p>
         A focused community for developers building real projects,
         improving together, and growing their careers.
@@ -122,9 +122,10 @@
     <div class="footer-links">
       <h4>Community</h4>
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="our-course.html">OurCourse</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a href="#">Join</a></li>
       </ul>
     </div>
@@ -143,14 +144,14 @@
       <p>Email: hello@devconnect.com</p>
       <p>Twitter: @devconnect</p>
     </div>
-
   </div>
 
   <div class="footer-bottom">
     <p>© 2026 DevConnect. All rights reserved.</p>
   </div>
 </footer>
-
-
+<script src="js/navToggle.js"></script>
+<script src="js/textSwap.js"></script>
+<script src="js/activeLink.js"></script>
 </body>
 </html>

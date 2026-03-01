@@ -1,0 +1,231 @@
+:root {
+  --about-primary: #3C2EFB;
+  --about-dark: #1a1657;
+  --about-light: #F0F8FF;
+  --about-gray: #666;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--about-dark);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ================= NAV ================= */
+.btn-about {
+  background: linear-gradient(270deg, var(--primary), black, var(--primary-dark));
+  background-size: 600% 600%;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  animation: gradientFlow 60s ease infinite;
+}
+
+
+/* ================= ABOUT HERO ================= */
+.about-hero {
+  background: linear-gradient(270deg, var(--primary-dark), var(--primary), black);
+  background-size: 600% 600%;
+  color: white;
+  text-align: center;
+  min-height: 80vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.904);
+  animation: gradientFlow 60s ease infinite;
+}
+
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero .highlight {
+  color: var(--about-light);
+}
+
+.about-tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 3rem;
+}
+
+/* ================= STATS ================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.about-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.about-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--about-dark);
+}
+
+.about-card .card-paragraph {
+  color: var(--about-gray);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* ================= STORY SECTION ================= */
+.story-wrapper {
+  background: #fff;
+  color: var(--about-dark);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(43, 43, 44, 0.445);
+  display: flex;
+  align-items: center;
+}
+
+.story-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.story-text {
+  flex: 1;
+  max-width: 380px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--about-dark);
+  font-size: 0.96rem; 
+  line-height: 1.4;
+}
+
+.story-inner-card {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(2, 11, 85, 0.658);
+}
+
+.story-inner-card img {
+  max-width: 70px;
+  border-radius: 50%;
+  background: #f9f7f7;
+  padding: 8px;
+  margin-bottom: 0.4rem;
+}
+
+.story-inner-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: var(--about-dark);
+}
+
+.story-inner-card p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: var(--about-gray);
+}
+
+
+/* ================= MISSION & VISION ================= */
+.about-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.event-card {
+  background: linear-gradient(
+    135deg,
+    var(--about-dark) 0%,
+    var(--about-dark) 33%,
+    var(--about-primary) 33%,
+    var(--about-primary) 66%,
+    black 66%,
+    black 100%
+    
+  );
+  background-size: 200% 200%;
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  animation: gradientFlow 20s ease infinite;
+}
+
+
+
+
+.event-icon {
+  font-size: 2.5rem;
+  color: var(--about-primary);
+  margin-bottom: 1rem;
+}
+
+.event-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--about-dark);
+  margin-bottom: 1rem;
+}
+
+.event-p {
+  color: var(--about-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .about-grid { grid-template-columns: 1fr 1fr; }
+  .about-hero h1 { font-size: 2.2rem; }
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-card { width: 100%; max-width: 320px; margin: auto; }
+  .about-hero h1 { font-size: 1.8rem; }
+  .about-tagline { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 { font-size: 1.6rem; }
+  .about-tagline { font-size: 0.9rem; }
+  .about-card h3 { font-size: 1.2rem; }
+  .about-card .card-paragraph { font-size: 0.85rem; }
+}

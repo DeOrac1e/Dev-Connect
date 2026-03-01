@@ -3,116 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevConnect</title>
-  <link rel="stylesheet" href="projects.css" />
+  <title>{DevConnect}</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<header class="header">
+<!-- ================= HEADER ================= -->
+ <header class="header">
   <div class="container nav">
-        <div class="logo-container">
-          <img src="images/logo-1.png" alt="" class="logo-img" />
-          <a href="index.html" class="logo">DevConnect</a>
-        </div>
+    <div class="logo-container">
+      <img src="images/logo-1.png" alt="DevConnect Logo" class="logo-img" />
+      <a href="index.html" class="logo">{DevConnect}</a>
+    </div>
 
+    <!-- Main site nav -->
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about us.html">About</a></li>
-        <li><a href="#">Team</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="our-course.html" class="active">OurCourse</a></li>
+        <li><a href="events.html">Events</a></li>
       </ul>
     </nav>
 
     <a href="#" class="btn-primary">Join Community</a>
+    <div class="hamburger">☰</div>
   </div>
 </header>
 
-<!------------------------------------------------- HERO ----------------------------------------------------->
-<section class="hero">
-  <div class="container hero-content">
-    <!-- <span class="badge">Welcome to DevConnect</span> -->
-    <h1>Our Community Projects</h1>
-    <p class="hero-paragraph">
-      Explore live projects built by our community members. Contribute, learn,
- and get inspired. 
-    </p>
 
-    <!-- <div class="hero-buttons">
-      <a href="#" class="btn-light">Join Our Community</a>
-      <a href="#" class="btn-outline">Explore Projects</a>
-    </div> -->
+<!--------------------------------------------- HERO SECTION--------------------------------------------------->
+
+<section class="projects-hero">
+  <div class="container projects-hero-content">
+    <h1 id="hero-heading">Our Community Projects</h1>
+    <p id="hero-paragraph" class="projects-hero-paragraph">
+      Explore live projects built by our community members. Contribute, learn,
+      and get inspired.
+    </p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-light">Submit Your Project</a>
+      <a href="https://twitter.com/yourhandle" target="_blank" class="btn-outline follow-x">
+        <i class="fab fa-x-twitter"></i> Follow on X
+      </a>
+    </div>
   </div>
 </section>
 
-<!--------------------------------------------- The projects --------------------------------------------------->
+
+<!--------------------------------------------- FILTER SECTION --------------------------------------------------->
+
 <section class="section">
-    <div class="hero-buttons">
-      <a href="#" class="btn-light">All Projects</a>
-      <a href="#" class="btn-outline">Completed</a>
-    <a href="#" class="btn-outline">Collaborated</a>
-
-    </div>
-
-</section>
-
-
-
-
-
-<!----------------------------------------------- submit project ----------------------------------------->
-<section class="section alt-bg">
   <div class="container">
     <div class="section-header">
-      <h2>Have a Project idea?</h2>
-      <p class="event-p">We're always excited to start new community projects. Share your idea and find collaborators to bring it to life.</p>
+      <h2>Community Projects</h2>
+      <p class="section-paragraph">
+        Browse projects created by our members. Filter by status or explore featured work.
+      </p>
     </div>
 
-         
-    
+    <div class="projects-filter">
+      <input type="text" placeholder="Search projects..." class="projects-search" />
+      <div class="projects-buttons">
+        <a href="#" class="projects-btn-light active">All</a>
+        <a href="#" class="projects-btn-outline">Completed</a>
+        <a href="#" class="projects-btn-outline">Collaborated</a>
+        <a href="#" class="projects-btn-outline">Ongoing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------------------------- PROJECT CARDS --------------------------------------------------->
+<section class="section">
+  <div class="container">
+    <div class="featured-projects">
+      
+      <div class="project-card featured">
+        <img src="images/testing-4.png" alt="Screenshot of AI Chatbot project" />
+        <h3>AI Chatbot</h3>
+        <p class="founder">Founder: DevConnect Community</p>
+        <p class="contributors">Contributors: Multiple members</p>
+        <p class="project-description">
+          A community-built chatbot leveraging Python and Natural Language Processing (NLP). 
+          Designed to answer developer queries, provide coding tips, and simulate real-world 
+          conversational AI. This project demonstrates collaboration, machine learning integration, 
+          and open-source contribution. It continues to evolve with new features and community input.
+        </p>
+        <div class="badges">
+          <span class="badge featured">⭐ Featured</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn-contribute">Contribute</a>
+          <a href="#" class="btn-details">Visit Project</a>
+        </div>
+      </div>
+
+      <div class="project-card featured">
+        <img src="images/testing-1.png" alt="Screenshot of Portfolio Builder project" />
+        <h3>Portfolio Builder</h3>
+        <p class="founder">Founder: Jane Doe</p>
+        <p class="contributors">Contributors: Community Designers</p>
+        <p class="project-description">
+          A collaborative project helping developers showcase their work in a professional portfolio. 
+          Built with modern web technologies, it allows customization, project highlights, and 
+          integration with GitHub. The tool empowers developers to present their skills effectively 
+          and grow their careers. It’s a favorite among contributors for its real-world impact.
+        </p>
+        <div class="badges">
+          <span class="badge favorite">💚 Community Favorite</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn-contribute">Contribute</a>
+          <a href="#" class="btn-details">Visit Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/testing-2.webp" alt="Screenshot of Weather App project" />
+        <h3>Weather App</h3>
+        <p class="founder">Founder: John Smith</p>
+        <p class="contributors">Contributors: Mary Lee, Alex Brown</p>
+        <p class="project-description">
+          A React-based weather application powered by the OpenWeather API. 
+          Users can search cities worldwide, view real-time forecasts, and 
+          track temperature trends. The app features responsive design, 
+          clean UI, and demonstrates API integration. It’s a learning project 
+          that grew into a practical tool for everyday use.
+        </p>
+        <div class="badges">
+          <span class="badge completed">✅ Completed</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn-contribute">Contribute</a>
+          <a href="#" class="btn-details">Visit Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/testing-3.jpg" alt="Screenshot of Task Manager project" />
+        <h3>Task Manager</h3>
+        <p class="founder">Founder: Sarah Johnson</p>
+        <p class="contributors">Contributors: DevConnect Productivity Team</p>
+        <p class="project-description">
+          A collaborative productivity tool designed to help developers 
+          and teams manage tasks efficiently. Features include project 
+          tracking, deadlines, and collaboration boards. Built with 
+          modern frameworks, it emphasizes teamwork and productivity. 
+          The project is ongoing, with contributors adding new features 
+          and refining the user experience.
+        </p>
+        <div class="badges">
+          <span class="badge ongoing">🔄 Ongoing</span>
+        </div>
+        <div class="project-actions">
+          <a href="#" class="btn-contribute">Contribute</a>
+          <a href="#" class="btn-details">Visit Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------------------------- SUBMIT YOUR PROJECT SECTION --------------------------------------------------->
+<section class="section alt-bg">
+  <div class="container contact-container">
+    <div class="section-header">
+      <h2>Have a Project Idea?</h2>
+      <p class="event-p">
+        We're always excited to start new community projects. Share your idea and find collaborators to bring it to life.
+      </p>
+    </div>
 
     <h2 class="section-title">Contact Us</h2>
-<section class="contact">
-  <div class="contact__container bd-grid">
-    <form id="contact-form" action="https://formspree.io/f/mzdrdajn" method="POST" class="contact__form">
-        <input type="text" name="name" placeholder="Name" class="contact__input" required autocomplete="">
-        <input type="email" name="email" placeholder="Email" class="contact__input" required autocomplete="email">
-        <textarea name="message" placeholder="Your message" rows="10" class="contact__input" required></textarea>
-        <button type="submit" class="contact__button button"> Send </button>
-    </form>
+    <section class="contact">
+      <div class="contact__container">
+        <form id="contact-form" action="https://formspree.io/f/mzdrdajn" method="POST" class="contact__form">
+          <input type="text" name="name" placeholder="Your Name" class="contact__input" required />
+          <input type="email" name="email" placeholder="Your Email" class="contact__input" required />
+          <textarea name="message" placeholder="Tell us about your project idea..." rows="8" class="contact__input" required></textarea>
+          <button type="submit" class="contact__button">🚀 Submit Idea</button>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
-  
-    
-
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!------------------------------------ FOOTER --------------------------------------------->
 
@@ -120,7 +200,7 @@
   <div class="container footer-grid">
 
     <div class="footer-brand">
-      <h3>DevConnect</h3>
+      <h3>{DevConnect}</h3>
       <p>
         A focused community for developers building real projects,
         improving together, and growing their careers.
@@ -132,6 +212,7 @@
       <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
+        <li><a href="our_Course.html">OurCourse</a></li>
         <li><a href="#">Events</a></li>
         <li><a href="#">Join</a></li>
       </ul>
@@ -155,10 +236,11 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2026 DevConnect. All rights reserved.</p>
+    <p>© 2026 {DevConnect}. All rights reserved.</p>
   </div>
 </footer>
-
-
+<script src="js/navToggle.js"></script>
+<script src="js/projectTextSwap.js"></script>
+<script src="js/activeLink.js"></script>
 </body>
 </html>
