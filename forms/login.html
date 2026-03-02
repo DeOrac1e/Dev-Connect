@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <h1>Sign In</h1>
+        <p>Hi Welcome back</p>
+        <form action="/signin" method="post">
+            <label for="username" class="email">Email:</label>
+            <input type="text" id="username" name="username" placeholder="example@gmail.com" required><br><br>
+            <label for="password" class="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="***********" required> 
+            <i class="fa-duotone fa-solid fa-eye-slash"></i>    
+            <i class="fa-duotone fa-solid fa-eye" style="display: none;"></i>
+            <!-- <span id="togglePassword" class="eye-icon">👁️</span> -->
+            <a href="passwordForget.html"><h2>Forget Password?</h2></a>
+            <button type="submit">Sign In</button>
+            <p>Sign in with</p>
+        </form>
+        <div class="social-icons">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
+    </main>
+
+</body>
+
+</html>

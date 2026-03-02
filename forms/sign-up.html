@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <h1>Create Account</h1>
+        <p>Fill in the information below <br> or register with your social account</p> <br>
+
+        <form action="/signup" method="post">
+<label for="username" class="name">Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+            <label for="phone" class="phone">Phone:</label>
+            <div class="phone-container">
+                <select id="countryCode" name="countryCode" class="country-code">
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+81">🇯🇵 +81</option>
+                    <option value="+33">🇫🇷 +33</option>
+                    <option value="+49">🇩🇪 +49</option>
+                    <option value="+39">🇮🇹 +39</option>
+                    <option value="+34">🇪🇸 +34</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="+55">🇧🇷 +55</option>
+                    <option value="+27">🇿🇦 +27</option>
+                </select>
+
+                <!-- visible local phone input (no server name) -->
+                <input type="tel" id="phoneLocal" name="phoneLocal" class="phone-input" placeholder="Enter phone number" inputmode="tel" required>
+
+                <!-- hidden input that will be submitted as the full phone (country code + local) -->
+                <input type="hidden" id="phone" name="phone" value="">
+            </div>
+                <!-- <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required> -->
+
+            <label for="email" class="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com" required><br> 
+
+            <label for="password" class="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="***********" required> 
+
+            <i class="fa-duotone fa-solid fa-eye-slash" aria-hidden="true"></i>    
+            <i class="fa-duotone fa-solid fa-eye" style="display: none;" aria-hidden="true"></i>
+            
+            <a href="passwordForget.html"><h2>Forget Password?</h2></a>
+            <button type="submit">Sign In</button>
+            <p>Sign in with</p>
+        </form>
+
+        <div class="social-icons">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+
+        <p>Already have an account? <a href="index.html">Sign in</a></p>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #C5C4CF66;
+    --secondary-color: #629FAD;
+    --tertiary-color: #0C2C55;
+    --background-color: #296374;
+    --border-color: #ddd;
+    --text-color: #060037;
+    --label-color: #555;
+    --font-size-xlarge: 2rem;
+    --font-size-large: 1.75rem;
+    --font-size-medium: 1rem;
+    --font-size-small: 0.9rem;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 0.75rem;
+    --spacing-large: 1.5rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+    font-size: var(--font-size-small);
+    color: var(--label-color);
+    margin-bottom: var(--spacing-small);
+    color: var(--text-color);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 25rem;
+    max-height: 40rem;
+    margin: 1rem auto;
+    padding: var(--spacing-large);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: var(--font-size-large);
+    color: var(--text-color);
+    margin-bottom: var(--spacing-medium);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-large);
+    margin-right: var(--spacing-medium);
+    text-align: right;
+    cursor: pointer;
+    
+}
+
+p {
+    font-size: var(--font-size-medium);
+    color: var(--label-color);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.email, .password {
+    display: block;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+    margin-bottom: var(--spacing-small);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    font-size: var(--font-size-medium);
+    
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+     border-color: var(--primary-color);
+     box-shadow: 0 0 1rem rgba(0, 123, 255, 0.25);
+}
+
+/* .eye-icon {
+  position: absolute;
+  right: 31.5rem;
+  top: 45%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+} */
+
+.fa-eye-slash, .fa-eye {
+    cursor: pointer;
+    margin-left: -35px;
+    position: relative;
+    z-index: 10;
+}
+
+.fa-eye-slash:hover, .fa-eye:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+/* .fa-duotone {
+    position: absolute;
+    right: 31.5rem;
+    top: 45%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    font-size: var(--font-size-medium);
+    color: var(--label-color);
+} */
+
+
+button {
+    width: 97%;
+    padding: var(--spacing-medium);
+    margin-top: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+    background-color: var(--text-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: var(--tertiary-color);
+    transition: all 0.9s ease-in-out;
+    /* font-size: var(--font-size-large); */
+    /* width: 97%; */
+    /* height: 16%; */
+    /* transition: font-size 0.9s ease-in-out, background-color 0.3s ease-in-out, width 0.9s ease, height 0.9s ease; */
+}
+
+div{
+    text-align: center;
+    margin-top: var(--font-size-large);
+}
+
+.fa-brands {
+    font-size: var(--font-size-xlarge);
+    margin: 0 var(--spacing-medium);
+    color: var(--tertiary-color);
+    cursor: pointer;
+    align-content: space-evenly;
+
+}
+
+.fa-brands:hover {
+    color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.social-icons {
+    margin-top: var(--spacing-large);
+    margin-bottom: var(--font-size-small);
+    text-align: center;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: right;
+    cursor: pointer;
+}
